@@ -1,0 +1,167 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+a,header,footer{
+  background-color: #00669f;
+}
+
+/*________________ OFERTAS */
+.section-ofertas{
+  background-color: #1CD1B0;
+  height: 38px;
+  width: 100%;
+  margin: 0;
+  padding-left: 27px;
+  padding-top: 10px;
+}
+
+h3{
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/*________________ HEADER */
+header{
+  position: sticky;
+  top: 0px;
+  height: 101px;
+  width: 100%;
+  padding: 28px 0 0 28px;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, .25);
+  z-index: 3;
+}
+
+/* H1 */
+h1{
+  font-size: 40px;
+  font-weight: 400;
+}
+
+/*________________ MAIN */
+main{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/*_______ Cards */
+#contenedor-cards{
+  height: 600px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+
+/*____card  */
+.card{
+  background-color: #f3f3f3;
+  position: relative;
+  height: 529px;
+  width: 300px;
+  margin: 15px 15px;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+}
+
+#bg-card-1{
+  background-image: url(../IMG/bg-batman.png);
+  height: 193px;
+  width: 300px;
+}
+
+#bg-card-2{
+  background-image: url(../IMG/bg-harley.png);
+  height: 193px;
+  width: 300px;
+}
+
+#logo-corazon{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+#imagen-heroe{
+  position: absolute;
+  left: 91px;
+  top: 134px;
+  height: 118px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+/* contenido card */
+
+.contenido-card{
+  margin-top: 74px;
+}
+
+.contenido-card h2{
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contenido-card p{
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+.contenido-card a{
+  color: #f3f3f3;
+  position: absolute;
+  left: 85.5px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  padding: 17px 37px;
+}
+
+/*________________ FOOTER */
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  height: 51px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+footer p, span{
+  color: #fff9f9;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer span{
+  text-transform: uppercase;
+}
