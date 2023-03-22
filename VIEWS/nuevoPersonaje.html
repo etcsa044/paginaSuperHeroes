@@ -1,128 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <title>Clase 10</title>
-  </head>
 
-  <body>
-    <!-- ofertas -->
-    <section class="section-ofertas">
-      <h3>Descuentos 20%</h3>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <title>Clase 10</title>
+</head>
 
-    <!-- Header -->
-    <header>
-      <h1>Heroes</h1>
-      <nav>
-        <ul>
-          <li><a href="">Contacto</a></li>
-          <li><a href="">Registrarme</a></li>
-          <li><a href="">Ingresar</a></li>
-          <li><a href="#">Añadir</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <!-- ofertas -->
+  <section class="section-ofertas">
+    <h3>Descuentos 20%</h3>
+  </section>
 
-    <main>
-      <form action="">
-        <fieldset>
-          <legend>Añadi tu super!</legend>
-          <p>Agregá tu personaje favorito completando las opciones.</p>
+  <!-- Header -->
+  <header class="header">
+    <h1>Heroe<span>Store</span></h1>
+    <nav>
+      <ul>
+        <li><a href="">Contacto</a></li>
+        <li><a href="">Registrarme</a></li>
+        <li><a href="">Ingresar</a></li>
+        <li><a href="#">Añadir</a></li>
+      </ul>
+    </nav>
+  </header>
 
-          <section>
-            <!-- Nombre -->
-            <article>
-              <label for="nombre">*Nombre</label>
-              <input type="text" name="nombre" id="nombre" tabindex="1" />
-            </article>
+  <main>
+    <form action="" method="post" id="form-añadir">
+      <fieldset class="principal">
+        <legend>Añadi tu super!</legend>
+        <p>Agregá tu personaje favorito completando las opciones.</p>
 
-            <!-- Especie -->
-            <article>
-              <label for="especie">*Especie</label>
-              <select name="especie" id="especie">
-                <option value="humano">Humano</option>
-                <option value="alien">Alienigena</option>
-                <option value="mutante">Mutantes</option>
-                <option value="dios">Dioses</option>
-              </select>
-            </article>
+        <section>
+          <!-- Nombre -->
+          <article class="campo">
+            <label for="nombre">*Nombre</label>
+            <input type="text" name="nombre" id="nombre" tabindex="1" />
+          </article>
 
-            <!-- date -->
-            <article>
-              <label for="fecha">Fecha</label>
-              <input type="date" name="fecha" id="fecha" />
-            </article>
+          <!-- Especie -->
+          <article class="campo">
+            <label for="especie">*Especie</label>
+            <select name="especie" id="especie">
+              <option value="humano">Humano</option>
+              <option value="alien">Alienigena</option>
+              <option value="mutante">Mutantes</option>
+              <option value="dios">Dioses</option>
+            </select>
+          </article>
 
-            <!-- file -->
-            <article>
-              <label for="file">Agregar foto</label>
-              <input
-                type="file"
-                name="file"
-                id="file"
-                placeholder="seleccionar archivo"
-              />
-            </article>
-          </section>
+          <!-- date -->
+          <article class="campo">
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha" />
+          </article>
 
-          <section>
-            <!-- Textarea -->
-            <article>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Descripcion"
-              >
+          <!-- file -->
+          <article class="campo">
+            <label for="file">Agregar foto</label>
+            <input type="file" name="file" id="file" placeholder="seleccionar archivo" />
+          </article>
+        </section>
+
+        <section>
+          <!-- Textarea -->
+          <article class="input-inferiores">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Descripcion">
               </textarea>
-            </article>
+          </article>
 
-            <!--Poderes  -->
-            <article>
-              <label for="poder"
-                >Poderes
-                <input type="checkbox" name="poder" id="poder" />
-                Volar
-                <input type="checkbox" name="poder" id="poder" />
-                Superinteligencia
-                <input type="checkbox" name="poder" id="poder" />
-                Vista de rayo laser
-                <input type="checkbox" name="poder" id="poder" />
-                Billetera Gorda
-              </label>
-            </article>
+          <!--Poderes  -->
+          <article class="input-inferiores">
+
+            <fieldset>
+              <legend>Poderes</legend>
+
+              <!-- Volar -->
+              <input type="checkbox" name="poder" id="volar" value="volar" />
+              <label for="volar">Volar</label>
+
+              <!-- Superinteligencia -->
+              <input type="checkbox" name="poder" id="inteligencia" value="inteligencia" />
+              <label for="inteligencia">Superinteligencia</label>
+
+              <!-- Vista de rayo laser -->
+              <input type="checkbox" name="poder" id="laser" value="laser" />
+              <label for="">Vista de rayo laser</label>
+
+              <!-- Billetera Gorda -->
+              <input type="checkbox" name="poder" id="dinero" value="dinero" />
+              <label for="dinero">Billetera Gorda</label>
+
+            </fieldset>
+
 
             <!-- Raza -->
-            <article>
-              <label for=""
-                >Tipo de personaje
-                <input type="radio" name="heroe" id="heroe" />
-                <label for="heroe">Héroe / Heroina</label>
-                <input type="radio" name="heroe" id="villano" />
-                <label for="villano">Villano / Villana</label>
-              </label>
-            </article>
-          </section>
-        </fieldset>
+            <fieldset>
+              <legend>Tipo de Personaje</legend>
 
-        <button>Añadir</button>
-      </form>
-    </main>
+              <!-- Bando -->
+              <input type="radio" name="heroe" id="heroe" />
+              <label for="heroe">Héroe / Heroina</label>
+              <input type="radio" name="heroe" id="villano" />
+              <label for="villano">Villano / Villana</label>
 
-    <!-- FOOTER -->
-    <footer>
-      <p>Todos los derechos reservados a <span>front end 1</span></p>
-    </footer>
-  </body>
+            </fieldset>
+
+
+          </article>
+        </section>
+      </fieldset>
+
+      <button>Añadir</button>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Todos los derechos reservados a <span>front end 1</span></p>
+  </footer>
+</body>
+
 </html>

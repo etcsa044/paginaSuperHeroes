@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size:62.5%;
+}
+
 body {
   background-color: #ffffff;
   width: 100%;
@@ -14,6 +18,14 @@ body {
 
 a,header,footer{
   background-color: #00669f;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
 }
 
 /*________________ OFERTAS */
@@ -42,12 +54,18 @@ header{
   padding: 28px 0 0 28px;
   box-shadow: 0px 10px 7px rgba(0, 0, 0, .25);
   z-index: 3;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* H1 */
 h1{
   font-size: 40px;
   font-weight: 400;
+}
+
+h1 span{
+  font-size: 4rem;
 }
 
 /*________________ MAIN */
@@ -164,4 +182,35 @@ footer p, span{
 
 footer span{
   text-transform: uppercase;
+}
+
+
+
+
+/* ____________________________________NUEVO PERSONAJE */
+
+
+/* FORM */
+#form-añadir{
+  background-color: #00669f;
+  height: 850px;
+  width: 1024px;
+  margin: 25px auto;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal{
+  height: 90%;
+  width: 90%;
+  border: none;
+}
+
+.principal legend{
+  color: #fbfffd;
+  font-size: 4rem;
+  text-align: center;
 }
